@@ -341,11 +341,32 @@ template {
   display: none;
 }
 
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 22px;
-  color: green;
-  background-image: url("img/header/header-bg.jpg");
+  line-height: 1.2;
+  color: #262C27;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
