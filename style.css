@@ -340,3 +340,12 @@ template {
 [hidden] {
   display: none;
 }
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: green;
+  background-image: url("img/header/header-bg.jpg");
+}
