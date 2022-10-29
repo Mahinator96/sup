@@ -385,6 +385,10 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
   padding: 57px 0;
   gap: 100px;
   -webkit-box-pack: end;
@@ -398,4 +402,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 .logo:hover path {
   fill: #0093A1;
+}
+
+.header__btn {
+  padding: 12px 71px;
+  color: #FFFFFF;
+  background-color: #262C27;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.header__btn:hover {
+  background-color: rgb(49, 57, 50);
 }
