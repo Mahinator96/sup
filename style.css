@@ -361,7 +361,7 @@ a {
   color: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
@@ -375,7 +375,29 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url("img/header/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
+  background-position: center;
+  position: relative;
+}
+.header::before, .header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 456px;
+  background-image: url("img/header/header-decorsvg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  z-index: 2;
+}
+.header::after {
+  -webkit-transform: translateY(90%) rotate(180deg);
+          transform: translateY(90%) rotate(180deg);
+  z-index: 3;
 }
 
 .header__top {
@@ -415,4 +437,77 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__btn:hover {
   background-color: rgb(49, 57, 50);
+}
+
+.header__content {
+  min-height: calc(100vh - 161px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.header__content-box {
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  max-width: 550px;
+  text-align: center;
+  margin-right: 30px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.header__title {
+  margin-bottom: 20px;
+  font-size: 64px;
+  line-height: 1.109375;
+}
+
+.header__text {
+  font-size: 24px;
+  line-height: 1.125;
+}
+
+.header__decor-text {
+  position: absolute;
+  bottom: -90px;
+  color: #0093A1;
+}
+
+.header__decor-text--word {
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  font-size: 130px;
+  line-height: 1.1153846154;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.header__decor-text--1 {
+  bottom: 45px;
+  right: 135px;
+}
+
+.header__decor-text--2 {
+  z-index: 4;
+  bottom: -118px;
+  left: 276px;
+}
+
+.header__decor-text--3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.21875;
+  font-style: italic;
+  text-align: center;
+  max-width: 360px;
+  z-index: 4;
+  right: 135px;
 }
