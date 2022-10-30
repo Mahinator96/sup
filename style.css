@@ -511,3 +511,117 @@ h1, h2, h3, h4, h5, h6, p {
   z-index: 4;
   right: 135px;
 }
+
+.info {
+  position: relative;
+  background-image: url("img/info/info-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 44%;
+  color: #FFFFFF;
+  margin-top: 155px;
+}
+.info::before {
+  content: "";
+  position: absolute;
+  height: 180px;
+  background-color: #262C27;
+  top: -155px;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+
+.info__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80px;
+  position: relative;
+  margin-bottom: 48vh;
+  padding-top: 105px;
+}
+
+.info__top-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  padding-top: 230px;
+  max-width: 290px;
+}
+
+.popup-btn {
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+}
+.popup-btn span {
+  display: block;
+  padding-top: 12px;
+  color: #FFFFFF;
+}
+
+.info__btn {
+  position: absolute;
+  bottom: 0;
+  left: 205px;
+}
+
+.info__top-text--btn {
+  padding-bottom: 125px;
+}
+
+.info__top-text--decor {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.info__top-img {
+  position: relative;
+  z-index: 6;
+}
+
+.info__specs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 130px;
+}
+
+.sub-title {
+  text-transform: uppercase;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.1166666667;
+  color: #FFFFFF;
+}
+
+.info__specs-list {
+  padding: 30px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  margin: 50px;
+}
+
+.info__specs-caption,
+.info__specs-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2222222222;
+}
+
+.info__specs-caption:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.info__specs-text {
+  vertical-align: top;
+  padding-left: 25px;
+}
