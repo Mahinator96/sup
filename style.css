@@ -725,6 +725,12 @@ ul {
   width: 201px;
   height: 199px;
   background-image: url("img/buy/star.svg");
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.buy__price:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 .buy__btn {
