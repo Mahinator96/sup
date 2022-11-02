@@ -361,8 +361,13 @@ a {
   color: inherit;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 .container {
@@ -436,7 +441,16 @@ h1, h2, h3, h4, h5, h6, p {
   transition: background-color 0.3s ease;
 }
 .header__btn:hover {
-  background-color: rgb(49, 57, 50);
+  background-color: #B9C400;
+  color: #262C27;
+}
+
+.header__phone {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header__phone:hover {
+  scale: 1.12;
 }
 
 .header__content {
@@ -558,10 +572,25 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   background-color: transparent;
 }
+.popup-btn path, .popup-btn circle {
+  -webkit-transition: add 0.3s ease;
+  transition: add 0.3s ease;
+}
+.popup-btn:hover path {
+  fill: #B9C400;
+}
+.popup-btn:hover circle {
+  stroke: #B9C400;
+}
 .popup-btn span {
   display: block;
   padding-top: 12px;
   color: #FFFFFF;
+  -webkit-transition: add 0.3s ease;
+  transition: add 0.3s ease;
+}
+.popup-btn:hover span {
+  color: #0093A1;
 }
 
 .info__btn {
@@ -604,8 +633,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .info__specs-list {
   padding: 30px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.6);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
   margin: 50px;
 }
 
@@ -624,4 +653,99 @@ h1, h2, h3, h4, h5, h6, p {
 .info__specs-text {
   vertical-align: top;
   padding-left: 25px;
+}
+
+.buy {
+  padding: 150px 0;
+}
+
+.buy__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 90px;
+}
+
+.buy__content {
+  position: relative;
+  max-width: 510px;
+}
+
+.buy__title {
+  color: #0093A1;
+  margin-bottom: 50px;
+}
+
+.buy__list {
+  margin-bottom: 25px;
+}
+
+.buy__item {
+  margin-bottom: 25px;
+  max-width: 292px;
+}
+.buy__item:last-child(2), .buy__item:last-child(1) {
+  max-width: 256px;
+}
+.buy__item:hover .buy__item-title {
+  color: #0093A1;
+}
+
+.buy__item-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.buy__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 130px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.2;
+  width: 201px;
+  height: 199px;
+  background-image: url("img/buy/star.svg");
+}
+
+.buy__btn {
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.125;
+  padding: 18px;
+  margin-top: 25px;
+  background-color: transparent;
+  color: #0093A1;
+  text-transform: uppercase;
+  border: 2px solid #0093A1;
+  cursor: pointer;
+  max-width: 484px;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.buy__btn:hover {
+  color: #262C27;
+  border-color: #B9C400;
+  background-color: #B9C400;
 }
