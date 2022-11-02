@@ -348,14 +348,6 @@ template {
           box-sizing: border-box;
 }
 
-body {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.2;
-  color: #262C27;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -370,10 +362,59 @@ ul {
   padding: 0;
 }
 
+ol {
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #262C27;
+}
+
 .container {
   max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.sub-title {
+  text-transform: uppercase;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.1166666667;
+  color: #FFFFFF;
+}
+
+.popup-btn {
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+}
+.popup-btn path, .popup-btn circle {
+  -webkit-transition: add 0.3s ease;
+  transition: add 0.3s ease;
+}
+.popup-btn:hover path {
+  fill: #B9C400;
+}
+.popup-btn:hover circle {
+  stroke: #B9C400;
+}
+.popup-btn span {
+  display: block;
+  padding-top: 12px;
+  color: #FFFFFF;
+  -webkit-transition: add 0.3s ease;
+  transition: add 0.3s ease;
+}
+.popup-btn:hover span {
+  color: #0093A1;
 }
 
 .header {
@@ -566,35 +607,7 @@ ul {
   max-width: 290px;
 }
 
-.popup-btn {
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  background-color: transparent;
-}
-.popup-btn path, .popup-btn circle {
-  -webkit-transition: add 0.3s ease;
-  transition: add 0.3s ease;
-}
-.popup-btn:hover path {
-  fill: #B9C400;
-}
-.popup-btn:hover circle {
-  stroke: #B9C400;
-}
-.popup-btn span {
-  display: block;
-  padding-top: 12px;
-  color: #FFFFFF;
-  -webkit-transition: add 0.3s ease;
-  transition: add 0.3s ease;
-}
-.popup-btn:hover span {
-  color: #0093A1;
-}
-
 .info__btn {
-  position: absolute;
   bottom: 0;
   left: 205px;
 }
@@ -622,15 +635,6 @@ ul {
   gap: 130px;
 }
 
-.sub-title {
-  text-transform: uppercase;
-  font-family: "Comfortaa", cursive;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 1.1166666667;
-  color: #FFFFFF;
-}
-
 .info__specs-list {
   padding: 30px 0;
   border-top: 1px solid rgb(255, 255, 255);
@@ -656,7 +660,7 @@ ul {
 }
 
 .buy {
-  padding: 150px 0;
+  padding: 150px 0 0;
 }
 
 .buy__inner {
@@ -754,4 +758,56 @@ ul {
   color: #262C27;
   border-color: #B9C400;
   background-color: #B9C400;
+}
+
+.tehnology {
+  margin-bottom: 150px;
+}
+
+.tehnology__top {
+  background-image: url("img/tehnology/tehnology-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.tehnology__top-inner {
+  min-height: 110vh;
+  position: relative;
+}
+
+.tehnology__btn {
+  right: 350px;
+  top: 50vh;
+}
+
+.tehnology__top-box {
+  position: absolute;
+  left: 0;
+  bottom: 85px;
+}
+
+.tehnology__title {
+  color: #262C27;
+  max-width: 470px;
+  margin-bottom: 62px;
+}
+
+.tehnology__list {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  padding-left: 25px;
+}
+
+.tehnology__list-item {
+  margin-bottom: 15px;
+  padding-left: 24px;
+}
+.tehnology__list-item::marker {
+  text-align: left;
+}
+.tehnology__list-item:last-child {
+  margin-bottom: 0;
 }
