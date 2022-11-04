@@ -1828,6 +1828,13 @@ body {
             justify-content: center;
   }
 }
+@media (max-width: 350px) {
+  .footer__menu-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 
 .footer__menu-item {
   -webkit-transition: color 0.3s ease;
@@ -1838,6 +1845,12 @@ body {
 }
 @media (max-width: 1000px) {
   .footer__menu-item {
-    padding: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 440px) {
+  .footer__menu-item {
+    font-size: 15px;
   }
 }
