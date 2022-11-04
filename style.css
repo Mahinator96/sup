@@ -1829,6 +1829,13 @@ body {
   }
 }
 
+.footer__menu-item {
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+}
+.footer__menu-item:hover {
+  color: #0093A1;
+}
 @media (max-width: 1000px) {
   .footer__menu-item {
     padding: 15px;
