@@ -461,7 +461,7 @@ body {
   left: 0;
   right: 0;
   height: 456px;
-  background-image: url("img/header/header-decorsvg.svg");
+  background-image: url("img/header/header-decorsvg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -482,7 +482,7 @@ body {
 }
 @media (max-width: 780px) {
   .header::before {
-    background-image: url("img/header/header-mini-decor.svg");
+    background-image: url("img/header/header-mini-decor.png");
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
     height: 130px;
@@ -496,7 +496,7 @@ body {
 }
 @media (max-width: 780px) {
   .header::after {
-    background-image: url("img/header/header-mini-decor.svg");
+    background-image: url("img/header/header-mini-decor.png");
     -webkit-transform: translateY(90%);
             transform: translateY(90%);
   }
