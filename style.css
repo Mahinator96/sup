@@ -426,8 +426,8 @@ body {
   background-color: transparent;
 }
 .popup-btn path, .popup-btn circle {
-  -webkit-transition: add 0.3s ease;
-  transition: add 0.3s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 .popup-btn:hover path {
   fill: #B9C400;
@@ -439,8 +439,8 @@ body {
   display: block;
   padding-top: 12px;
   color: #FFFFFF;
-  -webkit-transition: add 0.3s ease;
-  transition: add 0.3s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 .popup-btn:hover span {
   color: #0093A1;
